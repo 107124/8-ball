@@ -1,0 +1,45 @@
+body {
+  color: white;
+  margin: 0;
+  background-color: black;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App img {
+  width: 50%;
+}
+
+.App input {
+  width: 50vw;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  height: 20px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.App::placeholder {
+  color: grey;
+}
+
+.container {
+  background-image: url(./images/8-ball.jpg);
+}
+
+.button {
+  width: 20vw;
+  margin: 42px;
+  background-color: #40a9f3;
+  border: none;
+  height: 23px;
+  color: white;
+}
