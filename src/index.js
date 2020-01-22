@@ -5,7 +5,6 @@ import "./styles.css";
 
 import Ball from "./images/ball.png";
 
-let showIt = false;
 
 const handleSubmit = () => {
   const answers = [
@@ -29,7 +28,7 @@ const handleSubmit = () => {
     "\nYou may rely on it."
   ];
   console.log(answers);
-  showIt = true;
+
   return answers[Math.floor(Math.random() * answers.length)];
 };
 
@@ -43,7 +42,7 @@ function App() {
           Fortell
         </button>
       </form>
-      <p>{handleSubmit()}</p>
+      {handleSubmit()}
     </div>
   );
 }
