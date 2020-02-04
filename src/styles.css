@@ -1,10 +1,20 @@
 body {
   color: white;
   margin: 0;
-  background-color: black;
+  background-color: #1c2022;
 }
 
 .App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+}
+
+form {
   font-family: sans-serif;
   text-align: center;
   display: flex;
@@ -15,31 +25,43 @@ body {
 
 .App img {
   width: 50%;
+  max-width: 500px;
 }
 
 .App input {
+  font-weight: 600;
+  color: #40a8f3;
   width: 50vw;
   border-radius: 30px;
   outline: none;
   border: none;
   height: 20px;
-  padding-left: 20px;
   font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 250px;
 }
 
 .App::placeholder {
-  color: grey;
-}
-
-.container {
-  background-image: url(./images/8-ball.jpg);
+  color: rgba(133, 133, 133, 0.842);
+  font-weight: 600;
 }
 
 .button {
-  width: 20vw;
+  font-size: 20px;
+  width: 30vw;
   margin: 42px;
-  background-color: #40a9f3;
+  background-color: #40a8f3;
   border: none;
-  height: 23px;
+  height: 28px;
   color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  outline: none;
+  max-width: 100px;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background-color: #5fb2ee;
 }
