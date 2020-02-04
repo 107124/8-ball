@@ -41,6 +41,7 @@ function App() {
           Fortell
         </button>
       </form>
+      <p>{handleSubmit()}</p>
 
     </div>
   );
