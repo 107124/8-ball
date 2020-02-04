@@ -29,6 +29,8 @@ form {
 }
 
 .App input {
+  font-weight: 600;
+  color: #40a8f3;
   width: 50vw;
   border-radius: 30px;
   outline: none;
@@ -41,20 +43,23 @@ form {
 }
 
 .App::placeholder {
-  color: grey;
+  color: rgba(133, 133, 133, 0.842);
+  font-weight: 600;
 }
 
 .button {
   width: 20vw;
   margin: 32px;
+
   background-color: #40a8f3;
   border: none;
-  height: 23px;
+  height: 28px;
   color: white;
   cursor: pointer;
   transition: ease-in-out 0.3s;
   outline: none;
   max-width: 100px;
+  border-radius: 30px;
 }
 
 .button:hover {

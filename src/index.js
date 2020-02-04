@@ -5,7 +5,6 @@ import "./styles.css";
 
 import Ball from "./images/ball.png";
 
-
 const handleSubmit = () => {
   const answers = [
     "\nAs I see it, yes.",
@@ -42,7 +41,7 @@ function App() {
           Fortell
         </button>
       </form>
-      {handleSubmit()}
+
     </div>
   );
 }
