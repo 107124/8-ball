@@ -17,6 +17,12 @@ const handleClick = () => {
 const handleSubmit = () => {
   const answers = [
     "\nAs I see it, yes.",
+    "\nDude, what do you think I am? Magic?",
+    "\nWhy don't you ask Siri? I'm just a virtual-pool-table-ball.",
+    "\nYou may need a therapist.",
+    "\nDid you pray about it?",
+    "\nDid you come to me JUST to ask that? I'll say yes to make you happy.",
+    "\nAccording to your social history, i'd say most likely.",
     "\nI'd better not tell you now...",
     "\nUm... seriously?",
     "\nDon’t count on it.",
