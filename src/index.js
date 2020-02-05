@@ -6,7 +6,7 @@ import "./styles.css";
 import Ball from "./images/ball.png";
 
 const handleClear = () => {
-  document.getElementsById("8-ball-form").reset();
+  document.getElementsById("input").reset();
 };
 
 const handleClick = () => {
@@ -51,7 +51,7 @@ function App() {
     <form id="8-ball-form">
       <div className="App">
         <img src={Ball} alt="logo" />
-        <input className="input" placeholder="Enter a 'Yes' or 'No' question" />
+        <input id="input" placeholder="Enter a 'Yes' or 'No' question" />
         <button className="button" type="submit" onClick={handleClick}>
           Fortell
         </button>
