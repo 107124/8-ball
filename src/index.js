@@ -5,7 +5,9 @@ import "./styles.css";
 
 import Ball from "./images/ball.png";
 
-let clicked = false;
+const handleClear = () => {
+  document.getElementsById("8-ball-form").reset();
+};
 
 const handleClick = () => {
   console.log("This was clicked!");
@@ -40,13 +42,18 @@ const handleSubmit = () => {
 
 function App() {
   return (
-    <div className="App">
-      <img src={Ball} alt="logo" />
-      <input placeholder="Enter a 'Yes' or 'No' question" />
-      <button className="button" type="submit" onClick={handleClick}>
-        Fortell
-      </button>
-    </div>
+    <form id="8-ball-form">
+      <div className="App">
+        <img src={Ball} alt="logo" />
+        <input className="input" placeholder="Enter a 'Yes' or 'No' question" />
+        <button className="button" type="submit" onClick={handleClick}>
+          Fortell
+        </button>
+        <button className="clear-button" type="submit" onClick={handleClear}>
+          Clear
+        </button>
+      </div>
+    </form>
   );
 }
 

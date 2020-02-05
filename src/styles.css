@@ -47,9 +47,24 @@ form {
   font-weight: 600;
 }
 
+.clear-button {
+  width: 20vw;
+  margin-top: 32px;
+  background-color: #c40a0a;
+  border: none;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  outline: none;
+  max-width: 100px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 .button {
   width: 20vw;
-  margin: 32px;
+  margin-top: 32px;
   background-color: #40a8f3;
   border: none;
   height: 28px;
@@ -59,6 +74,7 @@ form {
   outline: none;
   max-width: 100px;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .button:hover {
