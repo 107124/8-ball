@@ -5,6 +5,13 @@ import "./styles.css";
 
 import Ball from "./images/ball.png";
 
+let clicked = false;
+
+const handleClick = () => {
+  console.log("This was clicked!")
+  alert(handleSubmit())
+};
+
 const handleSubmit = () => {
   const answers = [
     "\nAs I see it, yes.",
@@ -27,22 +34,21 @@ const handleSubmit = () => {
     "\nYou may rely on it."
   ];
   console.log(answers);
-
+  
   return answers[Math.floor(Math.random() * answers.length)];
 };
 
 function App() {
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={(handleClick())}> */}
         <img src={Ball} alt="logo" />
         <input placeholder="Enter a 'Yes' or 'No' question" />
-        <button className="button" type="submit">
+        <button className="button" type="submit" onClick={handleClick}>
           Fortell
         </button>
-      </form>
-      <p>{handleSubmit()}</p>
-
+      {/* </form> */}
+      
     </div>
   );
 }
