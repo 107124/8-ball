@@ -41,13 +41,13 @@ const handleSubmit = () => {
 function App() {
   return (
     <div className="App">
-      {/* <form onSubmit={(handleClick())}> */}
+      <form onSubmit={(handleClick())}>
         <img src={Ball} alt="logo" />
         <input placeholder="Enter a 'Yes' or 'No' question" />
         <button className="button" type="submit" onClick={handleClick}>
           Fortell
         </button>
-      {/* </form> */}
+      </form>
       
     </div>
   );
